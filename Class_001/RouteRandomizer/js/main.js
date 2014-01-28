@@ -106,7 +106,7 @@ RouteRandomizer.prototype.randomJump = function() {
 		this.currentPub = currentPublishers[ publisherOptions[publisherOptions.length * Math.random() << 0 ] ];
 
 		var subKeys = Object.keys(currentSubscribers);
-		for ( var i=subKeys.length-1; i>=subKeys.length; i--){
+		for ( var i=subKeys.length-1; i>=0; i--){
 			if ( subKeys[i].clientName == this.currentPub.clientName &&
 				 subKeys[i].remoteAddress == this.currentPub.remoteAddress ){
 				subKeys.splice(i,1);
