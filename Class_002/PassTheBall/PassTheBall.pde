@@ -15,7 +15,7 @@ Spacebrew sb_in;
 String server_in="localhost";   
 
 Spacebrew sb_out;
-String server_out="yourneighborshost";
+String server_out="192.168.0.118";
 
 String name="your name";  // same name used for app on both servers
 String description ="helping the ball jump from server to server";
